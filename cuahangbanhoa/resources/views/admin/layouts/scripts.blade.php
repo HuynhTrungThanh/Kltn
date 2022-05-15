@@ -1,16 +1,21 @@
-    <!-- Bootstrap core JavaScript-->
-    <script src="{{ url('assets/vendor/jquery/jquery.min.js') }}"></script>
-    <script src="{{ url('assets/vendor/bootstrap/js/bootstrap.bundle.min.js') }}"></script>
+     <!-- Core JS -->
+    <!-- build:js assets/vendor/js/core.js -->
+    <script src="{{ url('assets/vendor/libs/jquery/jquery.js') }}"></script>
+    <script src="{{ url('assets/vendor/libs/popper/popper.js') }}"></script>
+    <script src="{{ url('assets/vendor/js/bootstrap.js') }}"></script>
+    <script src="{{ url('assets/vendor/libs/perfect-scrollbar/perfect-scrollbar.js') }}"></script>
 
-    <!-- Core plugin JavaScript-->
-    <script src="{{ url('assets/vendor/jquery-easing/jquery.easing.min.js') }}"></script>
+    <script src="{{ url('assets/vendor/js/menu.js') }}"></script>
+    <!-- endbuild -->
 
-    <!-- Custom scripts for all pages-->
-    <script src="{{ url('assets/js/sb-admin-2.min.js') }}"></script>
+    <!-- Vendors JS -->
+    <script src="{{ url('assets/vendor/libs/apex-charts/apexcharts.js') }}"></script>
 
-    <!-- Page level plugins -->
-    <script src="{{ url('assets/vendor/chart.js/Chart.min.js') }}"></script>
+    <!-- Main JS -->
+    <script src="{{ url('assets/js/main.js') }}"></script>
 
-    <!-- Page level custom scripts -->
-    <script src="{{ url('assets/js/demo/chart-area-demo.js') }}"></script>
-    <script src="{{ url('assets/js/demo/chart-pie-demo.js') }}"></script>
+    <!-- Page JS -->
+    <script src="{{ url('assets/js/dashboards-analytics.js') }}"></script>
+
+    <!-- Place this tag in your head or just before your close body tag. -->
+    <script async defer src="https://buttons.github.io/buttons.js"></script>

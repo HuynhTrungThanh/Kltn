@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers;
 
 /*
 |--------------------------------------------------------------------------
@@ -13,11 +14,27 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
+Route::get('/welcome', function () {
     return view('welcome');
 });
-//ADMIN
+//Flower store
+Route::get('/', function () {
+    return view('store/home_page');
+});
+
+//Login-register
+Route::get('/login', function () {
+    return view('login');
+});
+Route::get('/register', function () {
+    return view('register');
+});
+//---------------------------------ADMIN----------------------------------------------//
 
 Route::get('/admin', function () {
     return view('admin/dashboard');
 });
+
+//DANH MUC
+Route::get('admin/danhmuc', 'DanhmucController@index');
+
