@@ -36,5 +36,9 @@ Route::get('/admin', function () {
 });
 
 //DANH MUC
-Route::get('admin/danhmuc', 'DanhmucController@index');
-
+Route::get('admin/danhmuc', 'DanhmucController@index')->name('danhmuc.index');
+Route::get('admin/danhmuc/create', 'DanhmucController@create');
+Route::post('admin/danhmuc/save', 'DanhmucController@save');
+Route::get('admin/danhmuc/edit/{id}', 'DanhmucController@edit');
+Route::post('admin/danhmuc/update/{id}', 'DanhmucController@update');
+Route::get('admin/danhmuc/delete/{id}', 'DanhmucController@delete');

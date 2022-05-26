@@ -8,7 +8,7 @@
       content="width=device-width, initial-scale=1.0, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0"
     />
 
-    <title>ADMIN | Dashboard</title>
+    <title>@yield('title') {{ __('Admin Dashboard') }}</title>
 
     <meta name="description" content="" />
 
@@ -44,21 +44,6 @@
 
 <div class="content-wrapper">
 @yield('main-content')
-
-<div class="container-xxl flex-grow-1 container-p-y">
-
-Today:
-                  <script>
-                    var day= new Date().getDate();
-                    var month= new Date().getMonth()+1;
-                    var year= new Date().getFullYear();
-                    document.write( day+"/"+month+"/"+year);
-                  </script>
-                  , Good day ❤️ !
-                  <b class="footer-link fw-bolder">ADMIN</b>
-</div>
-
-@include('admin.layouts.footer')
 </div>
 
 
